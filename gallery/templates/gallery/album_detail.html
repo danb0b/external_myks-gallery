@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load i18n %}
 {% load static %}
+{% load settings %}
 
 {% block extrahead %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/gallery.css' %}">
@@ -34,5 +35,10 @@
 <div class="album_export">
 <a href="{% url 'gallery:album-export' pk=album.pk %}">{% trans "Download album" %}</a>
 </div>
+
+
+<p>{% settings_value "GALLERY_RESIZE_PRESETS" %}</p>
+
+<p>{% settings_dict "GALLERY_RESIZE_PRESETS" "thumb" %}</p>
 
 {% endblock %}
