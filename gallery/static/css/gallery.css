@@ -83,13 +83,13 @@
     margin: 0 1em 1em 0;
 }
 .photo_list a img {
-    height: 8em;
-    width: 8em;
+//    height: 8em;
+//    width: 8em;
 }
 .photo_detail a {
     max-width: 48em;
 }
 .photo_detail a img {
-    max-height: 48em;
+//    max-height: 48em;
     max-width: 100%;
 }

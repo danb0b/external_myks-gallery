@@ -76,8 +76,8 @@ GALLERY_PATTERNS = (
 )
 
 GALLERY_RESIZE_PRESETS = {
-    'thumb': (128, 128, True),
-    'standard': (768, 768, False),
+    'thumb': (200, 200, True),
+    'standard': (500, 500, False),
 }
 
 GALLERY_RESIZE_OPTIONS = {
