@@ -143,6 +143,11 @@ def get_album_info(captures, command):
     """
     date = None
     try:
+        captures['a_day']
+    except KeyError:
+         captures['a_day'] = '01'
+         
+    try:
         kwargs = {
             k: int(captures['a_' + k])
             for k in ('year', 'month', 'day')

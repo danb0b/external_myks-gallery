@@ -71,8 +71,8 @@ GALLERY_PHOTO_STORAGE = 'example.storages.photo'
 GALLERY_CACHE_STORAGE = 'example.storages.cache'
 
 GALLERY_PATTERNS = (
-    ('Photos', r'(?P<a_year>\d{4})_(?P<a_month>\d{2})_(?P<a_day>\d{2})_'
-               r'(?P<a_name>[^/]+)/[^/]+.(jpg|JPG)'),
+    ('Photos', r'(?P<a_year>\d{4})[_-](?P<a_month>\d{2})[_-](?P<a_day>\d{2}) (?P<a_name>[^/]+)/[^/]+.(jpg|JPG)'),
+    ('Photos', r'(?P<a_year>\d{4})[_-](?P<a_month>\d{2}) (?P<a_name>[^/]+)/[^/]+.(jpg|JPG)'),
 )
 
 GALLERY_RESIZE_PRESETS = {

@@ -3,7 +3,7 @@ from django.core.files.storage import FileSystemStorage
 
 
 def photo():
-    return FileSystemStorage(location=settings.BASE_DIR / 'photos')
+    return FileSystemStorage(location='/home/danaukes/Desktop/2021')
 
 
 def cache():
